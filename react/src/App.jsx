@@ -1,13 +1,19 @@
 import Navbar from "./navbar.jsx";
+import Footer from "./footer.jsx";
+import Content from "./content.jsx";
 import './App.css';
 
 let App = () => {
 
   return (
-    <div>
+    <>
       <Navbar />
+      <Content />
+      <Footer/>
+    </>
+      
 
-    </div>
+    
 
   )
 }
