@@ -5,21 +5,17 @@ import img3 from "./assets/whatsapp.png";
 import img4 from "./assets/Instagram_icon.png";
 import img5 from "./assets/facebook.webp";
 
+
 let Portfolio = () => {
+     let show=()=>{
+        alert("working....")
+     }
     return (
         <>
-        {/* header */}
-        <div className="flex gap-30 items-center justify-center bg-gray-800 h-20 w-full ">
-            <h1 className="font-bold text-2xl text-gray-50">My Portfolio</h1>
-            <a href="Porfolio.jsx"  className="text-xl text-gray-50 ">Home</a>
-            <a href="" className="text-xl text-gray-50 ">About</a>
-            <a href="" className="text-xl text-gray-50 ">Service</a>
-            <a href="" className="text-xl text-gray-50 ">Skills</a>
-            <a href="" className="text-xl text-gray-50 ">Project</a>
-            <a href="" className="text-xl text-gray-50 ">Contact</a>
-        </div>
+       
+        
         {/* section */}
-        <div className="flex gap-30 justify-center  mt-20 w-full h-150">
+        <div className="flex gap-30 justify-center  mt-20 w-full h-130 p-top-20">
             <div className="h-100 w-100 flex items-center justify-center  rounded-lg shadow-lg">
                 <img src={img1} alt="Profile" className="rounded-full"/>
 
@@ -37,13 +33,13 @@ let Portfolio = () => {
                    <img src={img3} alt="WhatsApp" className="h-10 w-10"/>
                    <img src={img4} alt="Instagram" className="h-10 w-10"/>
                    <img src={img5} alt="Facebook" className="h-10 w-10"/>
-                </div>    
+                </div>  
+                <br /><br />
+                <button onClick={show} className="bg-gray-800 text-gray-100 py-2 px-4 rounded">More About Me</button>  
             </div>
         </div>
-        {/* footer */}
-        <div>
-
-        </div>
+        
+       
 
         </>
     )
