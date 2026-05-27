@@ -1,8 +1,12 @@
-import Count from './count'
+
+// import Change from './count'
+import Mode from './mode'
 const App = () => {
   return (
     <>
-    <Count/>
+    {/* <Change/> */}
+    
+    <Mode/>
       
     </>
   )

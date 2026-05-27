@@ -1,9 +1,9 @@
 import { useState } from 'react'
-const Count = () => {
+const Change = () => {
   const [count, setCount] = useState(0)
   const [hide, setHide] = useState(true)
   const [visible, setVisible] = useState(true)
-  const [reset, setReset] = useState(true)
+  const [light, setLight] = useState(true)
 
 
 
@@ -23,13 +23,12 @@ const Count = () => {
 
      <button onClick={()=>setHide(!hide)} style={{  width: '100px' }}>reset</button><br/>
 
-     <button onClick={()=>setVisible(!visible)} style={{  width: '100px' }}>{visible?"visible":"hidden"}</button><br/>
+   
 
-     <div style={{blacl:visible?"block":"none"}}>
-        {reset?}
 
-        <button onClick={()=>setCount(!reset)} style={{ width: '100px'}}>reset</button>
-     </div>
+     {light?<div style={{ width: '300px', height: '300px', backgroundColor: 'white', color: 'black' }}>Hello world</div>:<div style={{ width: '300px', height: '300px', backgroundColor: 'black', color: 'white' }}>Hello world</div>}
+
+     <button onClick={()=>setLight(!light)} style={{  width: '100px' }}>{light?"light":"dark"}</button><br/>
 
      
 
@@ -39,4 +38,4 @@ const Count = () => {
   )
 }
 
-export default Count
+export default Change
