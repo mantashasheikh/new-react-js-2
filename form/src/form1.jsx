@@ -19,6 +19,7 @@ function Form1(){
             <label htmlFor="">contact</label>
             <input type="text" name="contact" onChange={fun} />
             <input type="submit" />
+            
         </form>
         </>
     )
