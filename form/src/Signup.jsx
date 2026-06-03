@@ -28,7 +28,7 @@ function Signup(){
             <label htmlFor="">Email</label>
             <input type="text" name="email" onChange={signinput} />
             <label htmlFor="">Password</label>
-            <input type="text" name="Password" onChange={signinput}/>
+            <input type="text" name="password" onChange={signinput}/>
             <input type="submit" />
             
         </form>
